@@ -22,7 +22,7 @@ public class JunctionBoxes
      */
     public static void main(String[] args)
     {
-        String[] sboxes = new String[] { "mi2 job mid pet", "wz3 34 54 398", "a1 alps cow bar", "x4 45 21 7" };
+        String[] sboxes = new String[]{"mi2 job mid pet", "wz3 34 54 398", "a1 alps cow bar", "x4 45 21 7"};
 
         // String[] sboxes = new String[]
         // {
@@ -52,15 +52,18 @@ public class JunctionBoxes
  */
 class JunctionBox
 {
-    /** id */
+    /**
+     * id
+     */
     String id;
 
-    /** version */
+    /**
+     * version
+     */
     String version;
 
     /**
      * Describes a junction box
-     *
      *
      * @param box
      */
@@ -72,12 +75,14 @@ class JunctionBox
 
     /**
      * Begin the digit?
+     *
      * @return
      */
     public boolean beginsWithDigit()
     {
-        return Character.isDigit(version.toCharArray()[0]) ? true : false;
+        return Character.isDigit(version.toCharArray()[0]);
     }
+
     public String toString()
     {
         return id + " " + version;

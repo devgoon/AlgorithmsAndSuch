@@ -17,22 +17,23 @@ public class SmallestMultiple
      */
     public static void main(String[] args)
     {
-        int[] multiples = new int[]{20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1};
+        int[] multiples = new int[]{20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
 
         long minNumber = 10_000_000_000L;
 
-        for(long n = 1; n<10_000_000_000L; n++)
+        for (long n = 1; n < 10_000_000_000L; n++)
         {
             for (int i = 0; i < multiples.length; i++)
             {
                 if (n % multiples[i] == 0)
                 {
-                    if(i==multiples.length-1)
+                    if (i == multiples.length - 1)
                     {
-                        minNumber = minNumber>n ? n : minNumber;
+                        minNumber = minNumber > n ? n : minNumber;
 
                     }
-                }else
+                }
+                else
                 {
                     break;
                 }

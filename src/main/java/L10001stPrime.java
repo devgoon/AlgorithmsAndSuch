@@ -6,7 +6,7 @@
 
 /**
  * By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
- *
+ * <p>
  * What is the 10 001st prime number?
  */
 public class L10001stPrime
@@ -20,12 +20,12 @@ public class L10001stPrime
     {
         int count = 10_001;
         int number = 0;
-        int found =0;
+        int found = 0;
         while (count != 0)
         {
             if (isPrime(++number))
             {
-                found=number;
+                found = number;
                 count--;
             }
         }

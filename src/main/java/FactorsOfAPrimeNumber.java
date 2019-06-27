@@ -12,21 +12,25 @@ public class FactorsOfAPrimeNumber
 {
     /**
      * TODO: Method description
+     *
      * @param args
      */
     public static void main(String[] args)
     {
         long n = 28;
-        for (int i=1; i<=Math.round(Math.sqrt(n)); i++)
+        for (int i = 1; i <= Math.round(Math.sqrt(n)); i++)
         {
-            if (n%i==0)
+            if (n % i == 0)
             {
-                if(isPrime(i))
-                  System.out.printf("%d ", i);
+                if (isPrime(i))
+                {
+                    System.out.printf("%d ", i);
+                }
 
             }
         }
     }
+
     // checks whether an int is prime or not.
     private static boolean isPrime(int n)
     {

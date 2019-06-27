@@ -6,7 +6,7 @@
 
 /**
  * By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
- *
+ * <p>
  * What is the 10 001st prime number?
  */
 public class SummationOfPrimes
@@ -21,16 +21,17 @@ public class SummationOfPrimes
         int count = 2_000_000;
 
         long result = 2;
-        for(int n = 3; n<=count; n++)
+        for (int n = 3; n <= count; n++)
         {
-            if(isPrime(n))
+            if (isPrime(n))
             {
-                result+=n;
+                result += n;
             }
             System.out.println(n);
         }
         System.out.println("Result " + result);
     }
+
     // checks whether an int is prime or not.
     private static boolean isPrime(int n)
     {

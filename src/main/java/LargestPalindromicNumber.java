@@ -20,11 +20,11 @@ public class LargestPalindromicNumber
         //System.out.println(larrgestPalindrome(3));
         // Loop to calculate upper bound
         // (largest number    of n-digit)
-        int upperLimit=0;
-        for (int i=1; i<=3; i++)
+        int upperLimit = 0;
+        for (int i = 1; i <= 3; i++)
         {
-            upperLimit  *= 10;
-            upperLimit  += 9;
+            upperLimit *= 10;
+            upperLimit += 9;
         }
 
         // largest number of n-1 digit.
@@ -34,14 +34,15 @@ public class LargestPalindromicNumber
         int lowerLimit = 1 + upperLimit / 10;
 
         int max = 0;
-        for (int i = upperLimit; i>=lowerLimit; i--)
+        for (int i = upperLimit; i >= lowerLimit; i--)
         {
-            for(int j = i; j>=lowerLimit; j--)
+            for (int j = i; j >= lowerLimit; j--)
             {
                 int test = j * i;
                 if (isPalindromic(test))
                 {
-                    if(test>max){
+                    if (test > max)
+                    {
                         max = test;
                     }
 
